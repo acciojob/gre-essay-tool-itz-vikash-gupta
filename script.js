@@ -1,9 +1,9 @@
 //your code here
 function count_word(val) {
-    var wom = val.split(" ");
-    if (wom[0]=="")return {words:0}
+    var vk = val.trim().split(" ");
+    if (vk[0]=="")return {words:0}
     return {
-      words: wom ? wom.length : 0,
+      words: vk ? vk.length : 0,
     };
   }
   var textContent = document.getElementById("evaluatedText");
